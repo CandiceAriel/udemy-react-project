@@ -1,9 +1,9 @@
-import Body from "./Body";
+import Home from "./view/Home";
 
 function App() {
 
   return (
-    <Body />
+    <Home />
   );
 }
 

@@ -1,4 +1,5 @@
-import Expenses from "./view/Expenses"
+import React from 'react';
+import Expenses from "../components/expenses/Expenses"
 
 function Body() {
     const expenses = [

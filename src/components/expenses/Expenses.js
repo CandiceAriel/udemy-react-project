@@ -1,8 +1,10 @@
-import "../assets/scss/object/_wrapper.scss";
-import Card from "../components/Card";
-import ExpenseItem from "../components/ExpenseItem";
+import React from 'react';
 
-function Expenses(props) {
+import "../../assets/scss/style.scss";
+import Card from "../Card";
+import ExpenseItem from "./ExpenseItem";
+
+const Expenses = (props) => {
     return (
         <Card className="o-expenses">
             <ExpenseItem title={props.items[0].title} amount={props.items[0].amount} date={props.items[0].date} />
