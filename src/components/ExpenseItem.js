@@ -1,16 +1,14 @@
+import ExpenseDate from './ExpenseDate';
 import '../assets/scss/components/ExpenseItem.scss';
 
-function ExpenseItem() {
-    const expenseDate = new Date(2021, 3, 28);
-    const expenseTitle = "Car Insurance";
-    const expensePrice = 294.67;
+function ExpenseItem(props) {
 
     return (
         <div className= "c-expenseitem">
-            <div>{expenseDate.toISOString()}</div>
+            <ExpenseDate date= {props.date}/>
             <div className = "c-expenseitem-description"> 
-                <h2 className = "c-expenseitem-description-title">{expenseTitle}</h2>
-                <div className = "c-expenseitem-description-price">${expensePrice}</div>
+                <h2 className = "c-expenseitem-description-title">{props.title}</h2>
+                <div className = "c-expenseitem-description-price">${props.amount}</div>
             </div>
         </div>
     );
