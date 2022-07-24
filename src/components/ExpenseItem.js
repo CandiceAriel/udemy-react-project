@@ -1,14 +1,17 @@
+//Import Style
+import '../assets/scss/style.scss';
+
+//Import Components
 import ExpenseDate from './ExpenseDate';
-import '../assets/scss/components/ExpenseItem.scss';
 
 function ExpenseItem(props) {
 
     return (
-        <div className= "c-expenseitem">
+        <div className= "c-expense-item">
             <ExpenseDate date= {props.date}/>
-            <div className = "c-expenseitem-description"> 
-                <h2 className = "c-expenseitem-description-title">{props.title}</h2>
-                <div className = "c-expenseitem-description-price">${props.amount}</div>
+            <div className = "c-expense-item-description"> 
+                <h2 className = "c-expense-item-description_title">{props.title}</h2>
+                <div className = "c-expense-item-description_price">${props.amount}</div>
             </div>
         </div>
     );

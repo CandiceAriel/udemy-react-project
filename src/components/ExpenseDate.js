@@ -1,4 +1,5 @@
 //RENDER DATE OF EXPENSE
+import '../assets/scss/style.scss';
 
 function ExpenseDate(props) {
     const month = props.date.toLocaleString('en-US', {month: "long"});
@@ -6,10 +7,10 @@ function ExpenseDate(props) {
     const year = props.date.getFullYear();
 
     return (
-        <div>
-            <div>{month}</div>
-            <div>{year}</div>
-            <div>{date}</div>
+        <div className= "c-expense-date">
+            <div className= "c-expense-date_month">{month}</div>
+            <div className= "c-expense-date_year">{year}</div>
+            <div className= "c-expense-date_day">{date}</div>
         </div>
     );
 }
