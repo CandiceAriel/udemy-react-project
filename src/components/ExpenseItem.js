@@ -1,5 +1,6 @@
 //Import Style
 import '../assets/scss/style.scss';
+import Card from './Card';
 
 //Import Components
 import ExpenseDate from './ExpenseDate';
@@ -7,13 +8,13 @@ import ExpenseDate from './ExpenseDate';
 function ExpenseItem(props) {
 
     return (
-        <div className= "c-expense-item">
+        <Card className= "c-expense-item">
             <ExpenseDate date= {props.date}/>
-            <div className = "c-expense-item-description"> 
-                <h2 className = "c-expense-item-description_title">{props.title}</h2>
-                <div className = "c-expense-item-description_price">${props.amount}</div>
+            <div className = "c-expense-item__description"> 
+                <h2 className = "c-expense-item__description__title">{props.title}</h2>
+                <div className = "c-expense-item__description__price">${props.amount}</div>
             </div>
-        </div>
+        </Card>
     );
 }
 

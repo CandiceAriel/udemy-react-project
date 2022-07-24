@@ -8,9 +8,9 @@ function ExpenseDate(props) {
 
     return (
         <div className= "c-expense-date">
-            <div className= "c-expense-date_month">{month}</div>
-            <div className= "c-expense-date_year">{year}</div>
-            <div className= "c-expense-date_day">{date}</div>
+            <div className= "c-expense-date__month">{month}</div>
+            <div className= "c-expense-date__year">{year}</div>
+            <div className= "c-expense-date__day">{date}</div>
         </div>
     );
 }
