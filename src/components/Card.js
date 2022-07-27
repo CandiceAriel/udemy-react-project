@@ -2,7 +2,7 @@ import React from 'react';
 import "../assets/scss/style.scss";
 
 const Card = (props) => {
-    const classes = "o-card " + props.className;
+    const classes = "c-card " + props.className;
     return <div className={classes}>{props.children}</div>
 }
 

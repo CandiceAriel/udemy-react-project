@@ -17,9 +17,9 @@ const ExpenseItem = (props) => {
     return (
         <Card className= "c-expense-item">
             <ExpenseDate date= {props.date}/>
-            <div className = "c-expense-item__description"> 
-                <h2 className = "c-expense-item__description__title">{title}</h2>
-                <div className = "c-expense-item__description__price">${props.amount}</div>
+            <div className = "c-expense-item-description"> 
+                <h2 className = "c-expense-item-description__title">{title}</h2>
+                <div className = "c-expense-item-description__price">${props.amount}</div>
             </div>
             <button onClick={clickHandler}>Change title</button>
         </Card>
